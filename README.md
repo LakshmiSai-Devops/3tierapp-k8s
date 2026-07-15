@@ -12,20 +12,20 @@ This project demonstrates a complete DevOps workflow starting from containerizat
 
 The entire environment is currently running on a local Kubernetes cluster created using KIND (Kubernetes IN Docker), simulating a real-world cloud-native deployment workflow.
 
-# Architecture
+## Architecture
 Frontend → Auth Service → PostgreSQL Database
 
-## Components
-Frontend Service
-Auth Service (Node.js Backend)
-PostgreSQL Database
-Kubernetes
-Helm
-Jenkins
-Docker
-KIND Cluster
-GitHub
-**Tech Stack**
+### Components
+- Frontend Service
+- Auth Service (Node.js Backend)
+- PostgreSQL Database
+- Kubernetes
+- Helm
+- Jenkins
+- Docker
+- KIND Cluster
+- GitHub
+### Tech Stack
 **Containerization**
 Docker
 **Orchestration**
