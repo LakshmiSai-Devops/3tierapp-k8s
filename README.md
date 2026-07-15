@@ -105,7 +105,8 @@ Configured:
 - Kubernetes kubeconfig access
 - KIND network connectivity
 ## Project Structure
-'''text
+
+```text
 3tierapp-k8s/
 ├── auth-service/
 ├── frontend/
