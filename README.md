@@ -28,9 +28,9 @@ Frontend → Auth Service → PostgreSQL Database
 ## Tech Stack
 ### Containerization
 - Docker
-### Orchestration**
+### Orchestration
 - Kubernetes (KIND)
-### Package Management**
+### Package Management
 - Helm
 ### CI/CD
 - Jenkins
@@ -127,6 +127,10 @@ Configured:
 
 ├── README.md
 └── .gitignore
+
+
+
+
 ### CI/CD Pipeline
 Current automated workflow:
 
