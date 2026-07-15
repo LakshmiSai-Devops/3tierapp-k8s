@@ -3,17 +3,19 @@
 
 
 
-**Overview**
+# Overview
+
+
 CloudKart is a 3-tier microservices application deployed on Kubernetes using Docker, Helm, and Jenkins CI/CD.
 
 This project demonstrates a complete DevOps workflow starting from containerization, Kubernetes orchestration, Helm-based deployments, and automated CI/CD pipelines using Jenkins.
 
 The entire environment is currently running on a local Kubernetes cluster created using KIND (Kubernetes IN Docker), simulating a real-world cloud-native deployment workflow.
 
-**Architecture**
+# Architecture
 Frontend → Auth Service → PostgreSQL Database
 
-**Components**
+## Components
 Frontend Service
 Auth Service (Node.js Backend)
 PostgreSQL Database
