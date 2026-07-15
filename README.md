@@ -1,15 +1,15 @@
-CloudKart - 3 Tier Application Deployment on Kubernetes with Jenkins CI/CD
-Overview
+**CloudKart - 3 Tier Application Deployment on Kubernetes with Jenkins CI/CD**
+**Overview**
 CloudKart is a 3-tier microservices application deployed on Kubernetes using Docker, Helm, and Jenkins CI/CD.
 
 This project demonstrates a complete DevOps workflow starting from containerization, Kubernetes orchestration, Helm-based deployments, and automated CI/CD pipelines using Jenkins.
 
 The entire environment is currently running on a local Kubernetes cluster created using KIND (Kubernetes IN Docker), simulating a real-world cloud-native deployment workflow.
 
-Architecture
+**Architecture**
 Frontend → Auth Service → PostgreSQL Database
 
-Components
+**Components**
 Frontend Service
 Auth Service (Node.js Backend)
 PostgreSQL Database
@@ -19,39 +19,39 @@ Jenkins
 Docker
 KIND Cluster
 GitHub
-Tech Stack
-Containerization
+**Tech Stack**
+**Containerization**
 Docker
-Orchestration
+**Orchestration**
 Kubernetes (KIND)
-Package Management
+**Package Management**
 Helm
-CI/CD
+**CI/CD**
 Jenkins
 Jenkinsfile (Pipeline as Code)
-Source Control
+**Source Control**
 Git
 GitHub
-Database
+**Database**
 PostgreSQL
-Backend
+**Backend**
 Node.js
 Prisma ORM
-Frontend
+**Frontend**
 React
-Features Implemented
-Dockerization
+**Features Implemented**
+**Dockerization**
 Containerized frontend application
 Containerized backend application
 Custom Docker image builds
-Kubernetes Deployment
+**Kubernetes Deployment**
 Deployments
 Services
 Ingress
 Persistent Volume Claims (PVC)
 Environment Variables
 Rolling Updates
-Helm Integration
+**Helm Integration**
 Migrated raw Kubernetes manifests into Helm templates.
 
 Benefits:
@@ -60,14 +60,14 @@ Reusable deployments
 Centralized values.yaml
 Environment flexibility
 Easier upgrades and rollbacks
-Persistent Storage
+**Persistent Storage**
 Implemented PostgreSQL persistence using PVCs.
 
 Verified:
 
 Data survives pod recreation
 Database remains persistent across deployments
-Jenkins CI/CD Pipeline
+**Jenkins CI/CD Pipeline**
 Implemented Jenkins pipeline with:
 
 GitHub repository integration
@@ -80,7 +80,7 @@ Pipeline Flow:
 
 GitHub ↓ Jenkins ↓ Docker Build ↓ Load Image Into KIND ↓ Helm Upgrade ↓ Kubernetes Deployment
 
-Custom Jenkins Image
+**Custom Jenkins Image**
 Built a custom Jenkins Docker image containing:
 
 Docker CLI
@@ -92,7 +92,7 @@ Configured:
 Docker socket mounting
 Kubernetes kubeconfig access
 KIND network connectivity
-Project Structure
+**Project Structure**
 3tierapp-k8s/
 
 ├── auth-service/
@@ -114,7 +114,7 @@ Project Structure
 
 ├── README.md
 └── .gitignore
-CI/CD Pipeline
+**CI/CD Pipeline**
 Current automated workflow:
 
 Developer pushes code to GitHub
@@ -123,7 +123,7 @@ Docker images are built
 Images are loaded into KIND cluster
 Helm upgrades Kubernetes deployment
 Kubernetes performs rollout
-Key DevOps Concepts Practiced
+**Key DevOps Concepts Practiced**
 Docker Image Lifecycle
 Kubernetes Deployments
 Ingress Networking
@@ -138,14 +138,15 @@ CI/CD Automation
 Kubernetes Rollouts
 Docker Socket Integration
 Artifact Creation (Docker Images)
-Future Enhancements
+**Future Enhancements**
 GitHub Webhooks
 AWS ECR Integration
 EKS Deployment
 SonarQube Integration
 Trivy Security Scanning
 Terraform Infrastructure Provisioning
-Learning Outcomes
+
+**Learning Outcomes**
 This project helped me gain hands-on experience with:
 
 Docker
@@ -158,3 +159,8 @@ Containerized Application Deployment
 Kubernetes Networking
 Persistent Storage Management
 DevOps Pipeline Engineering
+
+**Author**
+D.Lakshmi Sai
+
+DevOps Engineer | AWS | Docker | Kubernetes | Jenkins | Terraform
